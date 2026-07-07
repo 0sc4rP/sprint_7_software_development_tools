@@ -6,7 +6,7 @@ import streamlit as st
 st.header('Análisis Exploratorio de Datos (EDA) - Histograma del Odómetro')
 
 # Leer los datos del archivo CSV
-car_data = pd.read_csv('C:\\Users\\Oscar\\Documents\\sprint7_proj\\vehicles_us.csv')
+car_data = pd.read_csv('vehicles_us.csv')
 
 # Crear un botón en la aplicación Streamlit
 hist_button = st.checkbox('Construir histograma')
