@@ -9,7 +9,7 @@ st.header('Análisis Exploratorio de Datos (EDA) - Histograma del Odómetro')
 car_data = pd.read_csv('C:\\Users\\Oscar\\Documents\\sprint7_proj\\vehicles_us.csv')
 
 # Crear un botón en la aplicación Streamlit
-hist_button = st.button('Construir histograma')
+hist_button = st.checkbox('Construir histograma')
 
 # Lógica a ejecutar cuando se hace clic en el botón
 if hist_button:
@@ -28,7 +28,7 @@ if hist_button:
     st.plotly_chart(fig, use_container_width=True)
 
     # Crear un botón en la aplicación Streamlit
-scatt_button = st.button('Construir gráfico de dispersión')
+scatt_button = st.checkbox('Construir gráfico de dispersión')
 
 # Lógica a ejecutar cuando se hace clic en el botón
 if scatt_button:
